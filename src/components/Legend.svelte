@@ -6,7 +6,7 @@
     import { format } from "d3-format";
     import { fade } from "svelte/transition";
 
-    const formatNum = (d) => format(",")(d).replace(/,/g, ".");
+    const formatNum = (d) => format(",")(d).replace(/,/g, ",");
 
     $: [minColor, midColor, maxColor] = colorScale.range();
     $: [minValue, , maxValue] = colorScale.domain();
